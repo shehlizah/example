@@ -1,0 +1,889 @@
+/* whole right side of admin edit screen (minus left menu) */
+
+#wp-content {
+    position: relative;
+}
+
+#wp-custom-content-wrap {
+    margin-bottom: 20px;
+}
+
+.fright {
+    float: right;
+}
+
+.fleft {
+    float: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-important {
+    display: none !important;
+}
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.button-tertiary {
+    background: rgb(255, 87, 87) !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    border-color: rgb(158, 0, 0) !important;
+    box-shadow: inset 0 1px 0 rgb(255, 116, 116), 0 1px 0 rgba(158, 0, 0, .08) !important;
+}
+
+.upload-wrapper {
+    position: relative;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    min-height: 120px;
+}
+
+.upload-wrapper.full-width {
+    width: 100%;
+    max-height: 400px;
+}
+
+.upload-wrapper img {
+    position: relative;
+    width: 400px;
+    border: solid 1px #000;
+}
+
+.upload-wrapper.full-width img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.upload-wrapper .upload-img-data {
+    position: absolute;
+    top: -13px;
+    left: 215px;
+    padding: 15px;
+    height: calc(100% - 33px);
+}
+
+.upload-wrapper .upload-img-data.empty {
+    padding: 0;
+}
+
+#titlediv {
+    margin-bottom: 20px;
+}
+
+
+/* custom dialog for template changing notification */
+
+.ui-dialog {
+    border: 1px solid #cecece;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0, 0.4);
+    background: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.ui-dialog .ui-dialog-titlebar span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 8px 10px;
+    border-left: none;
+    border-right: none;
+    line-height: 24px;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    border: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-top: solid 1px #eee;
+}
+
+.ui-dialog .ui-dialog-buttonset {
+    float: none !important;
+    text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane button:first-child {
+    margin-right: 10px;
+}
+
+.ui-widget-overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*#normal-sortables .postbox:not(.hide-if-js):not(#postexcerpt) {
+    display: none;
+}*/
+
+.post-type-access_group #normal-sortables .postbox:not(.hide-if-js) {
+    display: block !important;
+}
+
+.postbox-custom h3 {
+    cursor: pointer !important;
+    border-bottom: 1px solid #eee;
+    font-size: 17px !important;
+    /* padding: 10px 10px 11px 0px !important; */
+    margin: 0 !important;
+    line-height: 21px !important;
+}
+
+.postbox h3 .description,
+.postbox h4 .description {
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0 5px;
+    color: #0074a2;
+    box-shadow: none;
+}
+
+.postbox .inside h4 {
+    margin: 0 0 10px 0;
+}
+
+.postbox .inside p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.postbox .inside label {
+    /* min-width: 50px */
+}
+
+.postbox.postbox-custom {
+    display: block;
+}
+
+.postbox .inside input[type=text],
+.postbox .inside input[type=email],
+.postbox .inside textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.postbox .inside input[type=text].input-large,
+.postbox .inside input[type=email].input-large,
+.postbox .inside textarea.input-large {
+    width: 100%;
+    max-width: 100%;
+}
+
+.postbox .inside input[type=text].input-medium,
+.postbox .inside input[type=email].input-medium,
+.postbox .inside textarea.input-medium {
+    width: 47%;
+    max-width: 100%;
+}
+
+.postbox .inside input[type=text].input-small,
+.postbox .inside input[type=email].input-small,
+.postbox .inside textarea.input-small {
+    width: 100px;
+    max-width: 100%;
+}
+
+.postbox .inside .upload,
+.postbox .inside .btn-upload,
+.postbox .inside input[type=button],
+.postbox .inside input[type=submit] {
+    width: auto;
+}
+
+.postbox .inside .upload {
+    width: 70% !important;
+}
+
+.parent-node,
+.child-node,
+.item {
+    padding: 10px;
+    background: #fafafa;
+    margin: 10px 0;
+    overflow: visible;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.overflow-visible{
+    overflow: visible;
+}
+
+.sortable-placeholder {
+    border: dashed 4px #cecece;
+}
+
+label.for {
+    display: inline-block !important;
+    min-width: 30px !important;
+}
+
+.color-box {
+    display: block;
+    width: 15px;
+    height: 15px;
+    box-shadow: 1px 1px 3px #cecece;
+}
+
+.sortable-item {
+    text-indent: 25px;
+    background: url('../../images/move.png') no-repeat;
+    cursor: move;
+}
+
+.section-helper-wrapper {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 3px solid #eee;
+    background-color: #f4f8fa;
+    border-color: #5bc0de;
+}
+
+.section-helper-wrapper .description {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.section-helper-wrapper img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.upload-wrapper {
+    position: relative;
+    width: 200px;
+    padding: 0;
+    margin: 0 20px 0 0;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-image: linear-gradient(45deg, #c4c4c4 25%, transparent 25%, transparent 75%, #c4c4c4 75%, #c4c4c4), linear-gradient(45deg, #c4c4c4 25%, transparent 25%, transparent 75%, #c4c4c4 75%, #c4c4c4);
+    display: flex;
+    align-items: center;
+}
+
+.upload-wrapper img {
+    position: relative;
+    width: 200px;
+    border: none;
+}
+
+.upload-wrapper img.mime-icon {
+  margin: 0 auto !important;
+  width: auto !important;
+}
+
+.upload-wrapper input[type=button] {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.upload-wrapper input.btn-upload-remove {
+    display: none;
+    right: 5px;
+    left: auto;
+    margin-left: 5px;
+}
+
+.upload-wrapper.has-image input.btn-upload-remove {
+    display: block;
+}
+
+.page_url,
+.custom_url,
+.overlay_url {
+    margin-top: 5px;
+}
+
+#submitdiv #preview-action {
+    display: none;
+}
+
+a.top {
+    position: relative;
+    top: -40px;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+pre {
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+.columns-box {
+    width: 100;
+    overflow: hidden;
+}
+
+.columns-box > div {
+    float: left;
+}
+
+.columns-box .geolocator-error {
+    width: 100%;
+}
+
+.columns-box .label-column {
+    width: 20%;
+}
+
+.columns-box .content-full {
+    width: 80%;
+}
+
+.columns-box .content-half {
+    width: 40%;
+}
+
+.columns-box .content-half.geolocator-preview {
+    width: 35%;
+    padding: 2%;
+}
+
+.columns-box .content-half.geolocator-preview .inner {
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    border: 1px solid #E0E0E0;
+}
+
+.columns-box .content-half.geolocator-preview .inner .map {
+    width: 100%;
+    height: 200px;
+}
+
+.columns-box .content-half.geolocator-preview .message {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #A7A7A7;
+}
+
+.columns-box .content-half.geolocator-preview .error {
+    color: red;
+}
+
+.columns-box .content-full .checkbox-list:not(.inline) {
+    overflow: hidden;
+}
+
+.columns-box .content-full .checkbox-list:not(.inline) label {
+    width: 25%;
+    float: left;
+}
+
+.custom-templates-selector-wrapper .inside p,
+.types-selector-wrapper .inside p {
+    padding-top: 5px;
+}
+
+.custom-templates-selector-wrapper .inside p > label,
+.types-selector-wrapper .inside p > label {
+    text-align: left;
+    cursor: default;
+}
+
+.custom-templates-selector-wrapper .inside p > label > .text,
+.types-selector-wrapper .inside p > label > .text  {
+    padding-top: 8px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.loading-modules {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    opacity: 1;
+    display: none;
+    vertical-align: top;
+}
+
+.custom-templates-selector,
+.types-selector {
+    text-align: center;
+    cursor: pointer !important;
+    color: #0073aa;
+    vertical-align: middle !important;
+    border-radius: 2px !important;
+    padding: 4px !important;
+    height: 32px !important;
+}
+
+.types-selector-wrapper .multiautosuggestfield {
+  vertical-align: middle !important;
+  border-radius: 2px !important;
+  padding: 4px !important;
+  height: 32px !important;
+}
+
+@media (max-width:1200px) {
+    .geolocator-box .geolocator-label {
+        width: 100%;
+    }
+    .geolocator-box .geolocator-form,
+    .geolocator-box .geolocator-preview {
+        width: 45%;
+    }
+}
+
+@media (max-width:782px) {
+    .geolocator-box .geolocator-label,
+    .geolocator-box .geolocator-form,
+    .geolocator-box .geolocator-preview {
+        width: 100%;
+    }
+}
+
+.section-expander {
+    padding-top: 2px;
+    position:relative;
+    font-size:0px !important;
+}
+
+.section-expander:after {
+  right: -17px;
+  font: 400 20px/1 dashicons;
+  speak: none;
+  display: inline-block;
+  padding: 8px 10px;
+  top: -9px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none!important;
+  content: '\f140';
+  color: #777;
+  position: absolute;
+}
+
+.section-expander.is-expanded:after {
+  content: '\f142';
+}
+
+.all-sections-expander,
+.all-sections-collapser {
+    outline: 0;
+    box-shadow: none !important;
+    vertical-align: middle;
+}
+
+.modules-title {
+    margin: 37px 0;
+}
+
+#page_template,
+label[for=page_template] {
+    font-size: 0px;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    color: transparent;
+    border: none;
+    background: transparent;
+}
+
+#newprogram_category_parent {
+  display: none;
+}
+
+/*#pageparentdiv .inside p:nth-child(1) {
+    text-indent: -999px;
+    overflow: hidden;
+    margin: 0;
+    height: 10px;
+}*/
+
+
+/* modules as tabs preview -- leave for future implementation */
+
+
+/*.module-tabs {
+  margin-top:20px;
+}
+
+.module-tabs li > a {
+  outline:none !important;
+  box-shadow: none !important;
+}
+
+.module-tab-content {
+  background:#fff;
+  padding:20px 10px 10px 10px;
+  border: 1px solid #dfdfdf;
+}*/
+
+.nestedpages .nestedpages-top-toggles,
+.nestedpages .nestedpages-listing-title a.open-bulk-modal,
+.nestedpages .nestedpages-listing-title a.open-redirect-modal,
+.nestedpages .action-buttons a.open-redirect-modal,
+.nestedpages .action-buttons a.np-quick-edit,
+.nestedpages .action-buttons a.add-new-child,
+#dashboard-widgets .postbox li.post-count {
+    display: none!important;
+}
+
+.subsubsub li.all {
+    display: none;
+}
+
+.custom-timepicker {
+    margin-top: -3px !important;
+    height: 31px !important;
+    line-height: 33px !important;
+}
+
+.custom-datepicker {
+    width: 200px !important;
+}
+
+.ui-datepicker {
+    margin-top: 2px;
+    border: 1px solid #e5e5e5 !important;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04) !important;
+    background: #fff !important;
+    padding: 10px;
+}
+
+.ui-datepicker tr td a {
+    text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-current-day a {
+    font-weight: bold !important;
+    background: #fafafa !important;
+}
+
+.ui-datepicker .ui-datepicker-today a {
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev {
+    cursor: pointer;
+}
+
+.ui-icon-circle-triangle-e,
+.ui-icon-circle-triangle-w {
+    text-indent: 0;
+}
+
+.page-inline-nav .current,
+.page-inline-nav .current input {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 28px;
+    width: auto;
+}
+
+.mce-tinymce {
+    width: 100% !important;
+}
+
+.wp-editor-wrap {
+    width: 100%;
+}
+
+.js .tmce-active .wp-editor-area {
+    color: black;
+}
+
+.wp-tmce {
+    line-height: 19.5px !important;
+}
+
+#wp-content-editor-tools {
+    background-color: white;
+    padding-top: 0;
+}
+
+.nav2-module-wrapper .inline-menu-item {
+    min-width: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: 1px solid gray;
+}
+
+.nav2-module-wrapper .inline-menu-item:first-child {
+    border-left: 0;
+}
+
+.nav2-module-wrapper .inline-menu-item input {
+    width: auto !important;
+    margin-left: 15px;
+}
+
+/* override box shadow for the links */
+a:focus, a:focus .media-icon img {
+  box-shadow: none !important;
+}
+
+.ui-menu .ui-menu-item .ui-menu-item-icon {
+    background-repeat: no-repeat;
+    background-position: 2px, 0;
+    background-size: 16px;
+    padding-left: 23px;
+}
+
+/* hide the foot of the table on list admin screen */
+.wp-list-table tfoot {
+  display: none !important;
+}
+/* hide the actions sections after the table on list admin screen */
+.tablenav.bottom {
+  display:none;
+}
+
+.custom-modules-wrapper .nav-tab-wrapper {
+  margin-bottom: 20px !important;
+}
+
+a.trashed {
+  color: #a00;
+}
+
+.marker-label {
+  color: #777;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#post-body-content {
+  margin-bottom: 0;
+}
+
+
+#wp-button-wrap{
+    display: none;
+    height: 200px;
+
+    display: none;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+    box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+    width: 500px;
+    overflow: hidden;
+    margin-left: -250px;
+    margin-top: -125px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100105;
+    -webkit-transition: height 0.2s, margin-top 0.2s;
+    transition: height 0.2s, margin-top 0.2s;
+}
+
+#wp-button-button{
+    position: relative;
+    height: 100%;
+}
+
+#button-modal-title{
+    background: #fcfcfc;
+    border-bottom: 1px solid #dfdfdf;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 0 36px 0 16px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#wp-button-close {
+    color: #666;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#wp-button-wrap.search-panel-visible #button-selector {
+    -webkit-overflow-scrolling: touch;
+    padding: 0 16px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    bottom: 44px;
+}
+
+#wp-button-button .submitbox {
+    padding: 8px 16px;
+    background: #fcfcfc;
+    border-top: 1px solid #dfdfdf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#wp-button-cancel {
+    line-height: 25px;
+    float: left;
+}
+
+#wp-button-update {
+    line-height: 23px;
+    float: right;
+}
+
+/*Add button in tinymce*/
+.mce-ico.mce-i-custom-button:hover, .mce-ico.mce-i-custom-button.mce-active {
+  border: solid 1px transparent !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.mce-ico.mce-i-custom-button button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #f99d1c;
+  border-color: #f99d1c;
+  border-width: 2px;
+  padding: 8px 1px;
+  white-space: normal;
+  font-weight: 700;
+  padding: 0px 10px;
+  outline: 0;
+  float:left;
+  margin-top: 1px;
+}
+
+.mce-ico.mce-i-custom-button button:hover, .mce-ico.mce-i-custom-button.mce-active button {
+  box-shadow: none;
+  background: #eee;
+  border-color: #eee;
+  color: #436c6a;
+  outline: 0;
+  text-decoration: none;
+}
+
+.items-list .items-list .items-list .item{
+    background-color: #FAFAEE;
+}
+
+.types-selector-wrapper .types-selector{
+    line-height: 20px !important;
+}
+
+.post-type-product #wp-content-editor-tools {
+  background-color: #f1f1f1;
+}
+
+.post-type-product #postexcerpt {
+  margin-top: 20px;
+}
+
+#woocommerce-product-data,
+#woocommerce-order-data,
+#woocommerce-order-items,
+#woocommerce-order-downloads,
+#woocommerce-coupon-data {
+  display: block !important;
+}
+
+.post-type-product #postdivrich {
+  display: none !important;
+}
+
+.index-php .postbox {
+	display: block;
+}
+
+.woocommerce_options_panel p.form-field.no-label {
+  padding-left: 12px !important;
+}
+
+.woocommerce_options_panel .inline {
+  display: inline-block;
+}
+/* ==========================================
+ * GRAVITY FORMS ADMINISTRATION CUSTOMIZATIONS
+============================================= */
+
+.date_input_type_setting.field_setting,
+.multiple_files_setting.field_setting,
+.file_extensions_setting.field_setting,
+.file_size_setting.field_setting,
+.visibility_setting.field_setting,
+.label_placement_setting.field_setting,
+.captcha_theme_setting.field_setting,
+.sub_label_placement_setting.field_setting,
+.size_setting.field_setting {
+  display: none !important;
+}
+
+table.entry-detail-view td.lastrow {
+  border-bottom: solid 1px #dfdfdf !important;
+}
+
+td.entry-view-field-value {
+  padding: 8px 10px !important;
+}
+
+table.widefat tbody tr td.entry-view-field-value table.gfield_list td {
+  border-bottom: solid 1px #dfdfdf;
+}
+
+table.form-table.entry-details {
+  width: 100%;
+}
+
+table.gfield_list.gfield_list_container {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table.gfield_list.gfield_list_container th,
+table.gfield_list.gfield_list_container td {
+  padding: 8px 10px !important;
+}
