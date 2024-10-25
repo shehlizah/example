@@ -1,8 +1,5 @@
 <?php
 
-//TEST TEST COMMIT
-
-
 // function add_developer_capability() {
 //   /* Create a new capability for administratorsto control theme modules */
 //   $role = get_role( 'administrator' );
